@@ -12,17 +12,7 @@
 <body>
 
   <!-- Nav bar -->
-  <div class="sidenav">
-    <h3>Joe Estrem</h3>
-      <a href="about.html">About</a>
-    <h3>Web Development</h3>
-      <a href="plans-tonight.html">Plans Tonight</a>
-      <a href="#">Kollab</a>
-    <h3>Visual Design</h3>
-      <a href="#">Branding</a>
-      <a href="#">Social Media</a>
-      <a href="#">UI Design</a>
-  </div>
+  <div id="navbar"></div>
 
   <!-- Page content -->
   <div class="main-container">
@@ -31,5 +21,12 @@
   </div>
 
 
+  <script>
+    fetch('navbar.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('navbar').innerHTML = data;
+      });
+  </script>
 </body>
 </html>
