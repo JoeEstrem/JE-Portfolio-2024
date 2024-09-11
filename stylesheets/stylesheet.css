@@ -2,15 +2,17 @@
 
 h1 {
   font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 56px;
+  font-weight: 600;
+  font-size: 48px;
+  margin-bottom: 0px;
 }
 
 h2 {
   font-family: "Roboto", sans-serif;
-  font-weight: 600;
+  font-weight: 300;
   font-size: 24px;
   color: rgb(24, 24, 24);
+  margin-top: 0px;
 }
 
 h3 {
@@ -29,21 +31,34 @@ h4 {
 p {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
+  color: rgb(50, 50, 50)
 }
 
 /* Container */
 
 .main-container {
-  margin-left: 280px;
+  margin-left: 240px;
   padding: 0px 40px;
+}
+
+.content-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.content {
+  padding-left: 40px;
+  padding-right: 40px;
+  max-width: 50%;
 }
 
 /* Side nav */
 
 .sidenav {
   height: 100%;
-  width: 280px;
+  width: 240px;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -67,6 +82,10 @@ p {
 .sidenav h2 {
   padding-left: 32px;
   margin-bottom: 0px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  color: rgb(24, 24, 24);
 }
 
 .sidenav h3 {
@@ -77,4 +96,103 @@ p {
 
 .sidenav a:hover {
   color: #416fa2;
+}
+
+.sidenav-icon {
+display: none;
+}
+
+/* Images */
+
+.img-me {
+  max-width: 100%;
+}
+
+.film {
+  max-width: 33%;
+  height: auto;
+}
+
+/* Buttons */
+
+.black-btn {
+  background-color: rgb(25, 25, 25);
+  color: rgb(250, 250, 250);
+  padding: 12px 24px;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  border: none;
+}
+
+.black-btn:hover {
+  background-color: #416fa2;
+}
+
+
+
+@media (max-width: 768px) {
+
+  .content-container{
+    align-items: left;
+    flex-direction: column;
+  }
+
+  .sidenav {
+    width: 0px;
+    padding-left: 0px;
+    transition: 0.3s;
+    opacity: 0%;
+  }
+
+  .sidenav.open {
+    width: 100vw;
+    padding-left: 20px;
+    opacity: 100%;
+  }
+
+  .sidenav a {
+    font-size: 24px;
+  }
+
+  .sidenav h2 {
+    font-size: 48px;
+  }
+
+  .sidenav h3 {
+    font-size: 24px;
+  }
+
+  .main-container {
+    margin-left: 0px;
+  }
+
+  .content {
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 100%;
+    margin-top: 16px;
+  }
+
+  .content p {
+    font-size: 17px;
+  }
+
+  .film {
+    max-width: 100%;
+    padding-bottom: 16px;
+  }
+
+  .sidenav-icon {
+    display: block;
+    width: 64px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    overflow-x: hidden;
+    padding-right: 24px;
+    padding-bottom: 40px;
+    z-index: 10;
+  }
+
 }
