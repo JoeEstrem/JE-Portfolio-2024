@@ -1,3 +1,7 @@
+html, body {
+  overflow-x: hidden;
+}
+
 /* Typography */
 
 h1 {
@@ -31,7 +35,7 @@ h4 {
 p {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 16px;
   color: rgb(50, 50, 50)
 }
 
@@ -113,6 +117,23 @@ display: none;
   height: auto;
 }
 
+.content-img {
+  max-width: 100%;
+}
+
+.plans-img {
+  max-width: 33%;
+  height: auto;
+}
+
+.plans-circle-1 {
+  position: absolute;
+  left: 60%;
+  top: 40%;
+  width: 75%;
+  z-index: -1;
+}
+
 /* Buttons */
 
 .black-btn {
@@ -129,6 +150,11 @@ display: none;
   background-color: #416fa2;
 }
 
+/* footer */
+
+.footer {
+  height: 40px;
+}
 
 
 @media (max-width: 768px) {
@@ -193,6 +219,15 @@ display: none;
     padding-right: 24px;
     padding-bottom: 40px;
     z-index: 10;
+  }
+
+  .plans-img {
+    max-width: 100%;
+    padding-bottom: 16px;
+  }
+
+  .plans-circle-1 {
+    display: none;
   }
 
 }

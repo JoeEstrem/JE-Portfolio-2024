@@ -11,22 +11,53 @@
 </head>
 <body>
 
+  <img src="../images/menu-icon-shadow.png" class="sidenav-icon" id="menuIcon">
   <!-- Nav bar -->
-  <div id="navbar"></div>
+  <div class="sidenav" id="myNavbar">
+    <h2>JOE ESTREM</h2>
+      <a href="about.html">About</a>
+    <h3>WEB DEVELOPMENT</h3>
+      <a href="plans-tonight.html">Plans Tonight</a>
+      <a href="kollab.html">Kollab</a>
+    <h3>VISUAL DESIGN</h3>
+      <a href="branding.html">Branding</a>
+      <a href="social-media.html">Social Media</a>
+      <a href="ui-design.html">UI Design</a>
+  </div>
 
   <!-- Page content -->
   <div class="main-container">
-    <h1>Plans Tonight</h1>
-    <p>Save the headache for tomorrow</p>
+    <h1>PLANS TONIGHT
+      <a href="https://github.com/JoeEstrem/plans_tonight" target="_blank">
+        <img src="../images/DeviconGithub.png" style="width:36px;">
+      </a>
+    </h1>
+    <h2>Save the headache for tomorrow, make plans tonight hassle free.</h2>
+
+    <p><strong>Role:</strong> full-stack</p>
+    <p>
+      <strong>Tech stack</strong><br>
+      Backend: Ruby, Rails<br>
+      Frontend: Bootstap, Figma, JavaScript, HTML5<br>
+      Deployed on: Heroku
+    </p>
+
+    <img src="../images/Plans-Tonight-Gradient.png" class="plans-circle-1">
+    <div class="content-container">
+      <img src="../images/Plans-Tonight-1.png" class="plans-img">
+      <img src="../images/Plans-Tonight-2.png"class="plans-img">
+      <img src="../images/Plans-Tonight-3.png" class="plans-img">
+    </div>
+    <div class="content-container" style="margin-top: 8px;">
+      <img src="../images/Plans-Tonight-4.png" class="plans-img">
+      <img src="../images/Plans-Tonight-5.png"class="plans-img">
+      <img src="../images/Plans-Tonight-6.png" class="plans-img">
+    </div>
+
+    <div class="footer"></div>
+
   </div>
 
-
-  <script>
-    fetch('navbar.html')
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById('navbar').innerHTML = data;
-      });
-  </script>
+  <script src="../javascript/navbar.js"></script>
 </body>
 </html>
