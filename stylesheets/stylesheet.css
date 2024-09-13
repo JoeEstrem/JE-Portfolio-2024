@@ -39,11 +39,19 @@ p {
   color: rgb(50, 50, 50)
 }
 
+.support-text {
+  margin-top: -16px;
+}
+
 /* Container */
 
 .main-container {
   margin-left: 240px;
   padding: 0px 40px;
+}
+
+.main-container h3 {
+  font-size: 20px;
 }
 
 .content-container {
@@ -134,6 +142,18 @@ display: none;
   z-index: -1;
 }
 
+.one-item {
+  max-width: 100%;
+  padding-bottom: 16px;
+}
+.two-items {
+  max-width: 48.75%;
+}
+
+.four-items {
+  max-width: 23%;
+}
+
 /* Buttons */
 
 .black-btn {
@@ -165,14 +185,16 @@ display: none;
   }
 
   .sidenav {
-    width: 0px;
+    height: 0%;
+    width: 100%;
     padding-left: 0px;
     transition: 0.3s;
     opacity: 0%;
   }
 
   .sidenav.open {
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     padding-left: 20px;
     opacity: 100%;
   }
@@ -228,6 +250,16 @@ display: none;
 
   .plans-circle-1 {
     display: none;
+  }
+
+  .two-items {
+    max-width: 100%;
+    padding-bottom: 16px;
+  }
+
+  .four-items {
+    max-width: 100%;
+    padding-bottom: 16px;
   }
 
 }
