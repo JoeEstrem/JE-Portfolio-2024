@@ -58,10 +58,14 @@ p {
 
 /* Container */
 
+.page-container {
+  width: 64vw;
+  margin: 0 auto;
+  display: flex;
+}
+
 .main-container {
   margin-left: 240px;
-  padding: 0px 40px;
-  max-width: 1000px;
 }
 
 .main-container h3 {
@@ -83,14 +87,22 @@ p {
 /* Side nav */
 
 .sidenav {
-  height: 100%;
+  height: 100vh;
+  width: 240px;
+  position: fixed;
+  padding-top: 40px;
+  background-color: rgb(250, 250, 250);
+}
+
+.sidenav-old {
+  height: 100vh;
   width: 240px;
   position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
   overflow-x: hidden;
-  padding-top: 40px;
+
   padding-left: 8px;
   background-color: rgb(250, 250, 250);
 }
@@ -231,8 +243,8 @@ display: none;
   .sidenav.open {
     height: 100%;
     width: 100%;
-    padding-left: 20px;
     opacity: 100%;
+    margin-left: -40px;
   }
 
   .sidenav a {
@@ -255,7 +267,7 @@ display: none;
     z-index: 10;
     top: 0;
     padding-top: 16px;
-    padding-left: 40px;
+    padding-left: 88px;
   }
 
   .main-container {
