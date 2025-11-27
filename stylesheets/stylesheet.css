@@ -220,6 +220,31 @@ display: none;
 }
 
 
+/* Animations */
+
+@keyframes gradient-animation {
+  from {background-image: linear-gradient(128deg, transparent, transparent);}
+  to {background-image: linear-gradient(128deg, #40E0D0, #FFD700);;}
+}
+
+.text-fade-in {
+  color: transparent;
+  background-image: linear-gradient(128deg, transparent, transparent)
+  /* background-image: linear-gradient(128deg, #40E0D0, #FFD700); */
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation-name: gradient-animation;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+}
+
+.text-fade-in.one {
+  opacity: 1;
+}
+
+
+/* media */
+
 @media (max-width: 768px) {
 
   h1 {
